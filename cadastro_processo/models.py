@@ -1,3 +1,18 @@
 from django.db import models
 
-# Create your models here.
+
+class Planilha(models.Model):
+    """
+    Model que representa uma planilha
+    """
+    nome = models.CharField(
+        blank=False,
+        max_length=256,
+    )
+
+    cliente = models.CharField(
+        blank=False,
+        max_length=256,
+    )
+
+    arquivo = models.FileField(blank=False)

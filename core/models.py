@@ -5,6 +5,15 @@ class Processo(models.Model):
     """
     Model que representa um processo
     """
-    pasta = models.TextField()
-    comarca = models.TextField()
-    uf = models.TextField()
+    pasta = models.CharField(
+        blank=False,
+        max_length=100,
+    )
+
+    comarca = models.CharField(
+        max_length=100,
+    )
+
+    uf = models.CharField(
+        max_length=2,
+    )
