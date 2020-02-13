@@ -15,5 +15,9 @@ class Processo(models.Model):
     )
 
     uf = models.CharField(
+        verbose_name='UF',
         max_length=2,
     )
+
+    def __str__(self):
+        return self.pasta + ' (' + self.comarca + ', ' + self.uf + ')'
