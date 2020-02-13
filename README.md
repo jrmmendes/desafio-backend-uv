@@ -18,4 +18,4 @@ Se tudo tiver sido configurado com sucesso, executar a aplicação:
 ```
 pipenv run ./manage.py runserver
 ```
-E acessar o servidor local em `http://localhost/8000`.
+E acessar o servidor local em [`http://localhost/8000`](http://localhost/8000) utilizando qualquer navergador web.
